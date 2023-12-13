@@ -119,6 +119,7 @@ body {
   width: 24px;
   right: 0;
   background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.00) 100%);
+  margin-right: calc((100% - var(--base-width)) / 2);
 }
 
 .main .main__pagination .main__pagination-item.main__pagination-item--active {
