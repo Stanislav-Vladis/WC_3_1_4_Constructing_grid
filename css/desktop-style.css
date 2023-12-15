@@ -29,14 +29,14 @@ body {
   background: #F8F8F8;
 }
 
-.main .main__headline {
+.main__headline {
   display: flex;
   height: 64px;
   margin-top: 42px;
   margin-bottom: 24px;
 }
 
-.main .main__headline .main__headline-highlight {
+.main__headline-highlight {
   align-self: center;
   flex: 0 0 4px;
   height: 40px;
@@ -45,22 +45,29 @@ body {
   border-bottom-right-radius: 20px;
 }
 
-.main .main__headline .main__headline-repair,
-.main .main__headline .main__headline-checkStatus {
+.main__headline-repair,
+.main__headline-checkStatus {
   display: flex;
-  align-self: center;
-  align-items: center;
-  justify-content: center;
   column-gap: 8px;
-}
-
-.main .main__headline .main__headline-repair .main__headline-repair-img,
-.main .main__headline .main__headline-checkStatus .main__headline-checkStatus-img {
   margin-right: 32px;
 }
 
-.main .main__headline .main__headline-repair p,
-.main .main__headline .main__headline-checkStatus p {
+.main__headline-repair {
+  width: 175px;
+  background-image: url("/img/repair.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.main__headline-checkStatus {
+  width: 175px;
+  background-image: url("/img/checkstatus.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.main__headline-repair p,
+.main__headline-checkStatus p {
   color: #1B1C21;
   text-align: right;
   font-size: 16px;
@@ -69,7 +76,7 @@ body {
   letter-spacing: -0.2px;
 }
 
-.main .main__headline h1 {
+.main__headline h1 {
   align-self: center;
   flex: 1;
   margin: 0 32px 0 32px;
@@ -80,7 +87,7 @@ body {
   letter-spacing: -0.6px;
 }
 
-.main .main__pagination {
+.main__pagination {
   display: flex;
   flex-wrap: wrap;
   height: 40px;
@@ -88,27 +95,29 @@ body {
   margin: 0 0 16px 32px;
 }
 
-.main .main__pagination .main__pagination-item {
+.main__pagination-item {
   height: 36px;
   border: 2px solid #F8F8F8;
-  padding: 0 15px 0 15px;
   margin-bottom: 15px;
 }
 
-.main .main__pagination .main__pagination-fade {
+.main__pagination-fade {
   display: none;
 }
 
-.main .main__pagination .main__pagination-item.main__pagination-item--active {
+.main__pagination-item.main__pagination-item--active {
   border-radius: 6px;
   border: 2px solid #B8FFEC;
   background: #FFF;
 }
 
-.main .main__pagination .main__pagination-item .main__pagination-link {
+.main__pagination-button {
   width: 100%;
   height: 100%;
   display: flex;
+  border: none;
+  background: none;
+  font-size: 16px;
   align-items: center;
   justify-content: center;
   text-decoration: none;
@@ -116,29 +125,29 @@ body {
   font-weight: 500;
   line-height: 24px;
   letter-spacing: -0.2px;
-
+  padding: 0 15px 0 15px;
 }
 
-.main ul.main__pagination {
+ul.main__pagination {
   list-style: none;
   padding: 0;
 }
 
-.main .main__article {
+.main__article {
   display: flex;
   margin-top: 60px;
 }
 
-.main .main__article .main__article-textWrapper {
+.main__article-textWrapper {
   display: flex;
   flex-direction: column;
 }
 
-.main .main__article .main__article-textWrapper .main__article-text {
+.main__article-text {
   padding: 0 32px 16px 32px;
 }
 
-.main .main__article .main__article-textWrapper p.main__article-text {
+p.main__article-text {
   color: #1B1C21;
   font-size: 14px;
   font-style: normal;
@@ -148,18 +157,18 @@ body {
   margin: 0;
 }
 
-.main .main__article .main__article-textWrapper .main__article-text.hidden.span {
+.main__article-text.hidden.span {
   padding: 0;
 }
 
-.main .main__article .main__article-read-more {
+.main__article-read-more {
   display: flex;
   height: 24px;
   margin-left: 32px;
   margin-bottom: 16px;
 }
 
-.main .main__article .main__article-read-more a {
+.main__article-read-more a {
   color: #1B1C21;
   font-weight: 500;
   line-height: 24px;
@@ -168,7 +177,7 @@ body {
   text-decoration: none;
 }
 
-.main .main__article .main__article-img {
+.main__article-img {
   width: 500px;
   margin: 0 25px 25px 25px;
 }
