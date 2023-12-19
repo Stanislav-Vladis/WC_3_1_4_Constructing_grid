@@ -6,6 +6,7 @@
     <title>Constructing grid</title>
 
     <link rel="stylesheet" href="font/TTLakes/stylesheet.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" media="all and (max-width: 768.00px)" href="css/mobile-style.css">
     <link rel="stylesheet" media="all and (min-width: 768.02px) and (max-width: 1120.00px)" href="css/laptop-style.css">
     <link rel="stylesheet" media="all and (min-width: 1120.02px)" href="css/desktop-style.css">
@@ -20,7 +21,7 @@
     <header class="header">
       <button class="header__burger"></button>
       <div class="header__divider"></div>
-      <div class="header__logo">
+      <div class="main__menu-header-logo">
         <img class="header__logo-img" src="img/group.svg" alt="Лого CPS">
       </div>
       <button class="header__call"></button>
@@ -42,6 +43,42 @@
           <button>Статус ремонта</button>
         </div>
       </div>
+      <div class="main__menu">
+        <div class="main__menu-header">
+          <button class="main__menu-header-close"></button>
+          <div class="main__menu-header-logo">
+            <img src="img/group.svg" alt="Лого CPS">
+          </div>
+          <button class="main__menu-header-search"></button>
+        </div>
+
+        <ul class="main__menu-ul">
+          <li><a href="#1">Ремонт техники</a></li>
+          <li><a href="#2">Услуги и сервисы</a></li>
+          <li><a href="#3">Корпоративным клиентам</a></li>
+          <li><a href="#4">Продавцам техники</a></li>
+          <li><a href="#5">Партнерам</a></li>
+          <li><a href="#6">Производителям</a></li>
+          <li><a href="#7">Наши сервисные центры</a></li>
+          <li><a href="#8">Контакты</a></li>
+        </ul>
+
+        <div class="main__footer">
+          <div class="main__footer-button">
+            <button class="main__footer-call"></button>
+            <button class="main__footer-chat"></button>
+            <button class="main__footer-profile"></button>
+          </div>
+          <p class="main__footer-email">mail@cps.com</p>
+          <p class="main__footer-phone">8 800 890 8900</p>
+        </div>
+        <div class="main__footer-lang">
+          <button class="main__footer-ru">RU</button>
+          <button class="main__footer-en">EN</button>
+          <button class="main__footer-ch">CH</button>
+        </div>
+      </div>
+
       <ul class="main__pagination">
         <li class="main__pagination-item main__pagination-item--active">
           <button class="main__pagination-button">Ремонтируемые бренды</button>
@@ -79,6 +116,7 @@
     </main>
 
     <script src="js/interactive-pagination.js"></script>
+    <script src="js/interactive-menu.js"></script>
   </body>
 
 </html>

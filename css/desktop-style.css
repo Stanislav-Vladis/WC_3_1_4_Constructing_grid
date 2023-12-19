@@ -96,6 +96,10 @@ body {
   letter-spacing: -0.6px;
 }
 
+.main__menu {
+  display: none;
+}
+
 .main__pagination {
   display: flex;
   flex-wrap: wrap;
