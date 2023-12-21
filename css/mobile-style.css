@@ -263,6 +263,7 @@ body {
   line-height: 24px;
   letter-spacing: -0.2px;
   margin: 0 0 16px;
+  text-decoration: none;
 }
 
 .main__footer-phone {
@@ -274,6 +275,7 @@ body {
   line-height: 32px;
   letter-spacing: -0.6px;
   margin: 0 0 20px;
+  text-decoration: none;
 }
 
 .main__footer-lang {
